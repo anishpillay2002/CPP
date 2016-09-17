@@ -1,0 +1,86 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+
+int word_conv(int i)
+{
+        if(i==1)
+        {
+        cout<<"one"<<endl;
+    }
+    else if(i==2)
+        {
+        cout<<"two"<<endl;
+    }
+        else if(i==3)
+        {
+        cout<<"three"<<endl;
+    }
+        else if(i==4)
+        {
+        cout<<"four"<<endl;
+    }
+        else if(i==5)
+        {
+        cout<<"five"<<endl;
+    }
+        else if(i==6)
+        {
+        cout<<"six"<<endl;
+    }
+        else if(i==7)
+        {
+        cout<<"seven"<<endl;
+    }
+        else if(i==8)
+        {
+        cout<<"eight"<<endl;
+    }
+        else
+        {
+        cout<<"nine"<<endl;
+    }
+    return {};
+}
+
+
+int main() {
+    // Complete the code.
+    int k;
+    int i[2];
+    for(k=0;k<2;k++)
+        {
+           cin>>i[k];
+    }  
+    int number;
+    number=abs(i[0]-i[1])+1;
+    
+    int initial_no=i[0];
+    
+    
+    int complete_array[number];
+    
+    for(int p=0;p<number;p++)
+        {
+        complete_array[p]=initial_no+p;
+    }
+    
+    for(int j=0;j<number;j++)
+        {
+            if(complete_array[j]<10)
+            {
+                 word_conv(complete_array[j]);       
+            }
+            else
+            {
+                if(complete_array[j]%2==0)
+                    {cout<<"even"<<endl;}
+                else
+                    {cout<<"odd"<<endl;}
+            }
+        }
+    
+    
+    return 0;
+}
