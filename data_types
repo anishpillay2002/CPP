@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdio>
+#include<iomanip>
 using namespace std;
 
 int main() {
@@ -15,7 +16,8 @@ int main() {
     cout<<l<<endl;
     cout<<ll<<endl;
     cout<<c<<endl;
-    cout<<f<<endl;
-    cout<<d<<endl;
+    cout<<fixed<<setprecision(3)<<f<<endl;
+    cout<<fixed<<setprecision(9)<<d<<endl;
     return 0;
 }
+
