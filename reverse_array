@@ -1,0 +1,32 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    
+    int n;
+    int a[800],b[800];
+    cin>>n;
+    
+    for(int i=0;i<n;i++)
+        {
+        cin>>a[i];
+    }
+    
+    for(int i=0;i<n;i++)
+        {
+        b[n-1-i]=a[i];
+    }
+    for(int i=0;i<n;i++)
+        {
+        cout<<b[i]<<" ";
+    }
+    
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
