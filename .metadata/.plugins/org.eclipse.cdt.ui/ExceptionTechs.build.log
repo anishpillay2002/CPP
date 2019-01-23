@@ -1,0 +1,6 @@
+21:33:41 **** Incremental Build of configuration Release for project ExceptionTechs ****
+make all 
+make: Nothing to be done for `all'.
+
+21:33:41 Build Finished (took 82ms)
+

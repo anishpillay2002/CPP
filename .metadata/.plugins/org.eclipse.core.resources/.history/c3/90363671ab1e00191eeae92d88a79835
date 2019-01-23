@@ -1,0 +1,6 @@
+#include <iostream.h>
+#include <exception>
+
+void main(){
+return 0;
+}

@@ -1,0 +1,42 @@
+/*
+ * UsrExcption.cpp
+ *
+ *  Created on: Jan 22, 2019
+ *      Author: anishpillay
+ */
+
+#include <iostream>
+#include <exception>
+using namespace std;
+
+void goesWrong(){
+	bool error1Detected  = true;
+	bool error2Detected = false;
+
+	if (error1Detected) {
+		throw bad_alloc();
+	}
+
+	if (error2Detected){
+		throw exception();
+	}
+
+
+}
+
+int main(){
+	cout<<"yo"<<endl;
+	try{
+		goesWrong();
+	}
+	catch(exception &e){
+		cout<<e.what()<<endl;
+	}
+	catch(bad_alloc &e){
+		cout<<"Hey ya"<<e.what()<<endl;
+	}
+
+	return 1;
+}
+
+

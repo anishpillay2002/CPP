@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ExceptionTechs/UsrExcption&apos; to &apos;UsrExcption.cpp&apos;" description="Rename resource &apos;UsrExcption&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="UsrExcption" name="UsrExcption.cpp" stamp="1548205356180" updateReferences="true"/>
+</session>
