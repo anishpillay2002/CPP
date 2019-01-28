@@ -1,4 +1,4 @@
-/*
+/* // To run these programs the first time, go to project, Right click select 'Properties' and select 'Run/debug settings'. Select 'New' or 'Edit' existing configuration and select the .exe file for the program in the Debug or release folder. The .exe file appears only after building the code once.
  * UsrExcption.cpp
  *
  *  Created on: Jan 22, 2019
