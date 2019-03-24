@@ -1,7 +1,7 @@
 /*
- * AssignmenrOperatorOverloading.cpp
+ * PrintingOperatorOverloading.cpp
  *
- *  Created on: Mar 9, 2019
+ *  Created on: Mar 10, 2019
  *      Author: anishpillay
  */
 
@@ -34,9 +34,16 @@ public:
 		return *this;
 	}
 
+
 	Test(const Test &other) {
 		cout<<"Copy constructor running" <<endl;
 		*this = other;
+	}
+
+	friend ostream &operator<<(ostream &out, Test &test)
+	{
+		out<<test.id <<";"<<test.name;
+		return out;
 	}
 };
 
@@ -44,7 +51,7 @@ int main(){
 
 	Test test1(10,"Mike");
 	cout<<"Print test1:"<<flush;
-	test1.print();
+	cout<< test1<<endl;
 
 	Test test2(20,"Bob");
 
